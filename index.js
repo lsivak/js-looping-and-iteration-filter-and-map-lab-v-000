@@ -18,9 +18,9 @@ function exactMatch (drivers, attribute) {
 function exactMatchToList (drivers, attribute) {
   return drivers.filter(function (driver) {
 
-    for (const key in attribute) {
+    for (const value in attribute) {
       debugger
-      if(driver[key] === attribute[key]);
+      if(driver[value] === attribute[value]);
 return driver.name
     }
   });

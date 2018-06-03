@@ -1,7 +1,10 @@
 function driversWithRevenueOver (drivers, revenue) {
-  debugger
   return drivers.filter(function (driver) {
-    debugger
     return driver.revenue > revenue
+  })
+}
+function driverNamesWithRevenueOver (drivers, revenue) {
+  return driversWithRevenueOver (drivers, revenue).map(function (driver) {
+    return `${driver.name}`
   })
 }

@@ -10,7 +10,7 @@ function driverNamesWithRevenueOver (drivers, revenue) {
 }
 function exactMatch (extendedDrivers, attribute) {
     return extendedDrivers.filter(function (driver) {
-let match = false;
+
       debugger
       for(const key in driver) {
     return match = (attribute === attribute)

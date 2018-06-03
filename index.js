@@ -8,20 +8,17 @@ function driverNamesWithRevenueOver (drivers, revenue) {
     return `${driver.name}`
   })
 }
-// function exactMatch (extendedDrivers, attribute) {
-//       debugger
-//       // for(const driver in extendedDriver) {
-//           return extendedDrivers.filter(function (driver) {
-//     return driver.attribute === attribute
-//       debugger
-// // }
-// // }
-// })
-// }
 function exactMatch (drivers, attribute) {
   return drivers.filter(function (driver) {
     for (const key in attribute) {
       return driver[key] === attribute[key];
+    }
+  });
+}
+function exactMatchToList (drivers, attribute) {
+  return drivers.filter(function (driver) {
+    for (const key in attribute) {
+      return driver[value] === attribute[value];
     }
   });
 }

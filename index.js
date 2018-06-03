@@ -8,9 +8,9 @@ function driverNamesWithRevenueOver (drivers, revenue) {
     return `${driver.name}`
   })
 }
-function exactMatch (drivers, attribute.value) {
+function exactMatch (drivers, attribute) {
     for(const driver of drivers) {
-    if (driver[attibute] === value) {
+    if (driver[attibute] === attribute) {
     return driver
   }
 }

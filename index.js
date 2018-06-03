@@ -16,10 +16,11 @@ function exactMatch (drivers, attribute) {
   });
 }
 function exactMatchToList (drivers, attribute) {
+        debugger
   return drivers.filter(function (driver) {
     for (const key in attribute) {
       return driver[value] === attribute[value];
-      debugger
+
     }
   });
 }

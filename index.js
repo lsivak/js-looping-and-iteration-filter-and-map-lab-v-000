@@ -15,7 +15,7 @@ function exactMatch (extendedDrivers, attribute) {
     if (driver.attribute === attribute) {
       debugger
     return driver
-  }
+  })
 }
 }
 }

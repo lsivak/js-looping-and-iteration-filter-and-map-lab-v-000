@@ -12,7 +12,7 @@ function exactMatch (extendedDrivers, attribute) {
     return extendedDrivers.filter(function (driver) {
 
       debugger
-    if (driver.attribute === attribute) {
+    if (driver[attribute] === attribute) {
         for(const driver of extendedDrivers) {
       debugger
     return driver

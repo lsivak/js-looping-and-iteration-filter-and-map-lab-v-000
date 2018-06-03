@@ -8,9 +8,9 @@ function driverNamesWithRevenueOver (drivers, revenue) {
     return `${driver.name}`
   })
 }
-function exactMatch (extendedDrivers, attribute) {
-    return attribute.filter(function (driverAttribute) {
-    return extendedDrivers.driverAttribute === attribute
+function exactMatch (drivers, attribute) {
+    return drivers.filter(function (driver) {
+    return drivers[attibute] === attribute
   }
 }))
 }

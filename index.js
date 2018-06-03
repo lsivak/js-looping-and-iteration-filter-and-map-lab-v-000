@@ -18,14 +18,14 @@ function driverNamesWithRevenueOver (drivers, revenue) {
 // // }
 // })
 // }
-function exactMatch (drivers, matcher) {
+function exactMatch (drivers, attribute) {
   return drivers.filter(function (driver) {
-    let matches = false;
+    let match = false;
 
-    for (const key in matcher) {
-      matches = driver[key] === matcher[key];
+    for (const key in attribute) {
+      match = driver[key] === attribute[key];
     }
 debugger
-    return matches;
+    return match;
   });
 }
